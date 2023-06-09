@@ -11,8 +11,8 @@ const App = () => {
       <BrowserRouter>
         <Header></Header>
         <Routes>
-          <Route path="/" element={Home} />
-          <Route path="/login" element={Login} />
+          <Route path="/" element={<Home></Home>} />
+          <Route path="/login/*" element={<Login></Login>} />
         </Routes>
         <Footer></Footer>
       </BrowserRouter>
